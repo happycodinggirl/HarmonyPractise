@@ -41,7 +41,7 @@ struct FuncPage {
         let result= await writeFileFunction()
         console.info(`-----asyncfunction res is ${result}`)
       }).width(`50%`).height(`20%`)
-    }.width(`100%`).height(`100%`).backgroundColor(Color.Red)
+    }.width(`100%`).height(`100%`).backgroundColor(Color.Red).padding({top:40})
 
   }
 }

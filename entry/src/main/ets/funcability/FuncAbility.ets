@@ -37,6 +37,18 @@ export default class FuncAbility extends UIAbility {
         console.error(`------error is ${err.message}`)
       })
 
+      let type=window.AvoidAreaType.TYPE_NAVIGATION_INDICATOR
+      let avoidArea=windowClass.getWindowAvoidArea(type)
+      let navigationHeight=avoidArea.bottomRect.height//获取到导航条区域高度
+      console.info(`----navigationHeight is ${navigationHeight}`)
+
+      //隐藏状态栏和导航条
+      windowClass.setSpecificSystemBarEnabled(`status`,false).then(()=>{
+        console.info(`success in set statusbar invisible`)
+      }).catch((err:BusinessError)=>{
+        console.error( ` error in set status bar invisible msg is ${err.message}`)
+      })
+
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;
