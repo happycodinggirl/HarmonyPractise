@@ -1,6 +1,7 @@
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export default class FuncAbility extends UIAbility {
 
@@ -28,6 +29,14 @@ export default class FuncAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
     windowStage.loadContent('pages/FuncPage', (err) => {
+       let windowClass = windowStage.getMainWindowSync()
+       let isLayoutFullWindow =true
+      windowClass.setWindowLayoutFullScreen(isLayoutFullWindow).then(()=>{
+        console.info("----windowLayoutFullScreen success---")
+      }).catch((err:BusinessError)=>{
+        console.error(`------error is ${err.message}`)
+      })
+
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;

@@ -8,7 +8,6 @@ async  function  myAsyncFunction():Promise<string>{
       resolve(`hello world`)
     },3000)
   })
-
   return result
 }
 
@@ -42,7 +41,7 @@ struct FuncPage {
         let result= await writeFileFunction()
         console.info(`-----asyncfunction res is ${result}`)
       }).width(`50%`).height(`20%`)
-    }.width(`100%`).height(`100%`)
+    }.width(`100%`).height(`100%`).backgroundColor(Color.Red)
 
   }
 }
