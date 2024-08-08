@@ -2,6 +2,8 @@
   "src": [
     "pages/Index",
     "pages/PageTwo",
-    "pages/FuncPage"
+    "pages/FuncPage",
+    "pages/Parent",
+    "pages/Son"
   ]
 }
