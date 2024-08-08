@@ -1,6 +1,7 @@
 import {router} from '@kit.ArkUI'
 import { BusinessError } from '@kit.BasicServicesKit';
 import common from '@ohos.app.ability.common';
+import { HelloComponent } from './CustomView';
 
 @Entry
 @Component
@@ -22,7 +23,7 @@ struct PageTwo {
 
 
     Row(){
-      Column(){
+      Column({space:20}){
         Text(this.message).fontSize(50).fontWeight(FontWeight.Bold)
         Button(){
           Text("Back").fontSize(25).fontWeight(FontWeight.Normal)
@@ -40,10 +41,14 @@ struct PageTwo {
             console.error(`Failed to return to the first page. Code is ${code}, message is ${message}`)
 
           }
-
-
         })
+
+        HelloComponent()
+
+        HelloComponent()
       }
     }
   }
 }
+
+

@@ -1,6 +1,7 @@
 import { common } from '@kit.AbilityKit'
 import { fileIo } from '@kit.CoreFileKit'
 import { BusinessError } from '@kit.BasicServicesKit'
+import {router} from '@kit.ArkUI'
 
 async  function  myAsyncFunction():Promise<string>{
   const result:string = await new Promise((resolve:Function)=>{
@@ -32,15 +33,28 @@ async  function  writeFileFunction():Promise<boolean>{
 @Component
 struct FuncPage {
   @State message:string="before"
+
+  @State imageUrl:string="http"
+
+  fn=async ()=>{
+    console.info("----onClick---")
+    let result= await writeFileFunction()
+
+
+    console.info(`-----asyncfunction res is ${result}`)
+
+    router.back()
+
+  }
   build() {
     Column(){
       Text(this.message).align(Alignment.Center)
+
+      Text($r('app.string.module_desc'))
+      Image(this.imageUrl)
       Button(){
         Text(`press here to back`)
-      }.onClick(async ()=>{
-        let result= await writeFileFunction()
-        console.info(`-----asyncfunction res is ${result}`)
-      }).width(`50%`).height(`20%`)
+      }.onClick(this.fn).width(`50%`).height(`20%`)
     }.width(`100%`).height(`100%`).backgroundColor(Color.Red).padding({top:40})
 
   }
