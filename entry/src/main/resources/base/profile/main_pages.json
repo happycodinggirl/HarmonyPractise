@@ -4,6 +4,7 @@
     "pages/PageTwo",
     "pages/FuncPage",
     "pages/Parent",
-    "pages/Son"
+    "pages/Son",
+    "pages/CustomPage"
   ]
 }

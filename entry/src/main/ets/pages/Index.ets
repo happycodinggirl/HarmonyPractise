@@ -13,7 +13,7 @@ function  getInstance():string{
 @Component
 struct Index {
   @State message: string = 'Hello World';
-  private  contentList : Array<string> = ['异步任务','自定义UI']
+  private  contentList : Array<string> = ['异步任务','自定义UI',`自定义布局`]
 
   build() {
     List({space:`30`}){
@@ -37,14 +37,15 @@ struct Index {
                     console.info(`start ability success `)
                   }).catch((err:BusinessError)=>{
                     console.error(`startAblity error is ${err} message is ${err.message}`)
-
                   })
                   break
 
                 case "自定义UI":
                   router.pushUrl({url:'pages/PageTwo'})
                   break
-
+                case "自定义布局":
+                  router.pushUrl({url:`pages/CustomPage`})
+                  break
               }
 
 
