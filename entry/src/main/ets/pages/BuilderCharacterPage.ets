@@ -22,8 +22,16 @@ function overBuilderCustomComp($$:Tmp){
   Column(){
     Text(`i am from customComp`)
     CustomComp({message:$$.param1})
+    overBuilderSon({param1:$$.param1})
   }
 
+}
+
+@Builder
+function overBuilderSon($$:Tmp){
+  Column(){
+    Text(`i am from son builder param1 is ${$$.param1}`)
+  }
 }
 
 
@@ -58,6 +66,8 @@ struct CustomComp{
     }
   }
 }
+
+
 
 
 
