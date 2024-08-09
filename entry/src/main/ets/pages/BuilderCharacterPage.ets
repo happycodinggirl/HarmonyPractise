@@ -17,14 +17,14 @@ function overBuilderOK(tmp:Tmp){
   }
 }
 
-/*@Builder
+@Builder
 function overBuilderCustomComp($$:Tmp){
   Column(){
     Text(`i am from customComp`)
     CustomComp({message:$$.param1})
   }
 
-}*/
+}
 
 
 
@@ -44,11 +44,11 @@ struct Parent{
 
       ParentOk()
 
-   //   overBuilderCustomComp({param1:this.label})
+      overBuilderCustomComp({param1:this.label})
     }
   }
 }
-/*@Component
+@Component
 struct CustomComp{
   @State label:string =`hello`
   @Prop message:string=''
@@ -57,7 +57,7 @@ struct CustomComp{
       Text(`hello customComp is ${this.message}`)
     }
   }
-}*/
+}
 
 
 
