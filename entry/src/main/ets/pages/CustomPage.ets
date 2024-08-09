@@ -1,3 +1,5 @@
+import { router } from '@kit.ArkUI';
+
 @Entry
 @Component
 struct CustomPage {
@@ -17,7 +19,9 @@ function ColumnChildren() {
       .fontSize(16)
       .width(100)
       .height(100)
-      .borderWidth(2)
+      .borderWidth(2).onClick((err)=>{
+      router.back()
+    })
       //.offset({x:10,y:10})
   })
 }

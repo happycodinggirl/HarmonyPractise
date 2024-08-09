@@ -5,6 +5,7 @@
     "pages/FuncPage",
     "pages/Parent",
     "pages/Son",
-    "pages/CustomPage"
+    "pages/CustomPage",
+    "pages/BuilderCharacterPage"
   ]
 }
