@@ -1,5 +1,5 @@
-
-
+import { UIContext, uiObserver } from '@kit.ArkUI'
+import { common } from '@kit.AbilityKit'
 
 
 @Component
@@ -8,11 +8,31 @@ export struct HelloComponent{
 
   @State clickCount : number =0
 
+  listener:(info:uiObserver.RouterPageInfo)=>void =(info:uiObserver.RouterPageInfo)=>{
+    let routeInfo:uiObserver.RouterPageInfo|undefined=this.queryRouterPageInfo()
+    if (info.pageId == routeInfo?.pageId) {
+      if (routeInfo.state==uiObserver.RouterPageState.ON_PAGE_SHOW) {
+        console.info("--------customView onPageShow------")
+
+      }else if (routeInfo.state==uiObserver.RouterPageState.ON_PAGE_HIDE){
+        console.info('==========customView onPageHide--------')
+      }else{
+        console.info(`-----------pageStatus is ${routeInfo.state}`)
+      }
+      
+    }
+    
+  }
+
   aboutToAppear(): void {
+  let context=getContext(this) as common.UIAbilityContext
+    uiObserver.on('routerPageUpdate',context,this.listener)
     console.log(`customView -----------------------------about to Appear`)
   }
 
   aboutToDisappear(): void {
+    let context=getContext(this) as common.UIAbilityContext
+  uiObserver.off('routerPageUpdate',context,this.listener)
     console.log(`customView------------------------------------about to disappear`)
   }
 
