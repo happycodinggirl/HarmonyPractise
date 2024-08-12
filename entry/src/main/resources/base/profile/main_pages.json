@@ -6,6 +6,7 @@
     "pages/Parent",
     "pages/Son",
     "pages/CustomPage",
-    "pages/BuilderCharacterPage"
+    "pages/BuilderCharacterPage",
+    "pages/BuiderCharacter1"
   ]
 }

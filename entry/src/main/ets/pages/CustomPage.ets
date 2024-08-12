@@ -32,8 +32,8 @@ struct MyCustomComponent {
   doNothingBuilder() {
   };
 
-  @BuilderParam mBuilder: () => void = this.doNothingBuilder
-  @State startSize: number = 100
+  @BuilderParam mBuilder: () => void
+
   resultSize: SizeResult = {
     width: 0,
     height: 0

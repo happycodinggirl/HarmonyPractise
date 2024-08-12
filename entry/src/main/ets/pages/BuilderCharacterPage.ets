@@ -4,7 +4,7 @@ class Tmp{
 }
 
 @Builder
-function overBuilder(tmp:string){
+function overBuilder1(tmp:string){
   Row(){
     Text(`UserStateVarByValue:${tmp}`)
   }
@@ -24,7 +24,6 @@ function overBuilderCustomComp($$:Tmp){
     CustomComp({message:$$.param1})
     overBuilderSon({param1:$$.param1})
   }
-
 }
 
 @Builder
@@ -38,11 +37,11 @@ function overBuilderSon($$:Tmp){
 
 @Entry
 @Component
-struct Parent{
+struct Parent1{
   @State label:string =`hello`
   build() {
     Column({space:10}){
-      overBuilder(`${this.label}`)//上述这种传值方式，点击按钮的时候不会引起界面刷新
+      overBuilder1(`${this.label}`)//上述这种传值方式属于按值传递，点击按钮的时候不会引起界面刷新
       Button(){
         Text(`this style cannot change text show content,click here to change lable`).fontSize(20).onClick((err)=>{
           console.info(` to click btn `)
