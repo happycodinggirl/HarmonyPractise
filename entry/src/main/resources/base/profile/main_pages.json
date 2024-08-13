@@ -10,6 +10,7 @@
     "pages/BuiderCharacter1",
     "pages/PropCharactor1",
     "pages/BuilderParamPage",
-    "pages/BuilderPage2"
+    "pages/BuilderPage2",
+    "pages/WapBuilderPage"
   ]
 }
