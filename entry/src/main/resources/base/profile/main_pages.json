@@ -7,6 +7,9 @@
     "pages/Son",
     "pages/CustomPage",
     "pages/BuilderCharacterPage",
-    "pages/BuiderCharacter1"
+    "pages/BuiderCharacter1",
+    "pages/PropCharactor1",
+    "pages/BuilderParamPage",
+    "pages/BuilderPage2"
   ]
 }

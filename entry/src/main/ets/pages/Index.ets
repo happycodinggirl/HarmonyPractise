@@ -13,7 +13,7 @@ function  getInstance():string{
 @Component
 struct Index {
   @State message: string = 'Hello World';
-  private  contentList : Array<string> = ['异步任务','自定义UI',`自定义布局`,`Builder装饰器特性`,`Builder装饰器特性续集`]
+  private  contentList : Array<string> = ['异步任务','自定义UI',`自定义布局`,`Builder装饰器特性`,`Builder装饰器特性续集`,`Build参数来源`,`Build尾随闭包函数`]
 
   build() {
     List({space:`30`}){
@@ -52,7 +52,16 @@ struct Index {
                case `Builder装饰器特性续集`:
                   router.pushUrl({url:'pages/BuiderCharacter1'})
                   break
+
+                case `Build参数来源` :
+                  router.pushUrl({url:'pages/BuilderParamPage'})
+                  break
+                case `Build尾随闭包函数`:
+                  router.pushUrl({url:`pages/BuilderPage2`})
+                  break
+
               }
+
 
 
 

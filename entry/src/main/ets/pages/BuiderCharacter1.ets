@@ -18,7 +18,7 @@ function overBuilder(){
 struct Child {
   @Prop childCount:number=0
 
-  decreaseStep:number=5
+  decreaseStep:number=1
 
 
 
@@ -50,7 +50,7 @@ struct Child {
 @Component
 struct Parent {
 
-  @Prop //prop 数据单向传递，负组件 prop 变量的变化会自动同步到子组件，但子组件的变化不会回流到父组件
+  @State //prop 数据单向传递，负组件 prop 变量的变化会自动同步到子组件，但子组件的变化不会回流到父组件
   parentCount:number = 100
 
 
@@ -72,7 +72,7 @@ struct Parent {
           })
         }
 
-        Child({overBuilderWithoutParam: this.componentBuilder,overBuilderWithParam:overBuilderWithParam,childCount:this.parentCount})
+        Child({overBuilderWithoutParam: this.componentBuilder,overBuilderWithParam:overBuilderWithParam,childCount:this.parentCount,decreaseStep:5})
       }
   }
 }
