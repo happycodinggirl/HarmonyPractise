@@ -15,7 +15,7 @@ struct Index {
   @State message: string = 'Hello World';
   private  contentList : Array<string> = ['异步任务','自定义UI',`自定义布局`,
     `Builder装饰器特性`,`Builder装饰器特性续集`,`Build参数来源`,
-    `Build尾随闭包函数`,`wrapBuilder`]
+    `Build尾随闭包函数`,`wrapBuilder`,`Styles装饰器`,`Extend装饰器使用`,`StateStyle使用`]
 
   build() {
     List({space:`30`}){
@@ -64,6 +64,17 @@ struct Index {
 
                 case `wrapBuilder`:
                   router.pushUrl({url:`pages/WapBuilderPage`})
+                  break
+
+                case `Styles装饰器`:
+                  router.pushUrl({url:`pages/StyleUsePage`})
+                  break
+
+                case `Extend装饰器使用`:
+                  router.pushUrl({url:`pages/ExtendCharacterPage`})
+                  break
+                case `StateStyle使用`:
+                  router.pushUrl({url:`pages/StateStyleUsePage`})
                   break
 
               }

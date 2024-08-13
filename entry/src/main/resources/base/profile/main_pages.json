@@ -11,6 +11,9 @@
     "pages/PropCharactor1",
     "pages/BuilderParamPage",
     "pages/BuilderPage2",
-    "pages/WapBuilderPage"
+    "pages/WapBuilderPage",
+    "pages/StyleUsePage",
+    "pages/ExtendCharacterPage",
+    "pages/StateStyleUsePage"
   ]
 }
