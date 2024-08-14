@@ -15,6 +15,11 @@
     "pages/StyleUsePage",
     "pages/ExtendCharacterPage",
     "pages/StateStyleUsePage",
-    "pages/AnimateExtendPage"
+    "pages/AnimateExtendPage",
+    "pages/AnimatePropertyPage",
+    "pages/RequiredPage",
+    "pages/StatePage",
+    "pages/StatePage1",
+    "pages/PropStatePage"
   ]
 }
