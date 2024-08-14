@@ -12,10 +12,12 @@ struct LittleChild{
 
 
 
+
   build() {
       Column(){
         Text(`${this.head}`)
         this.close()
+
       }
 
   }
@@ -37,6 +39,7 @@ struct BuilderPage2 {
 
   build() {
     Column(){
+      //这种写法要求，LittleChild 必须只有一个无参数的 BuildParam
       LittleChild({head:this.message}){
         Button(){
           Text(`click to make change`)

@@ -40,7 +40,7 @@ struct Child {
 
       this.overBuilderWithoutParam()
       this.overBuilderWithParam({param1:`i am child param`})
-    }
+    }.backgroundColor(Color.Orange)
 
   }
 }

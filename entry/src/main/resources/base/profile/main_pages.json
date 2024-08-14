@@ -14,6 +14,7 @@
     "pages/WapBuilderPage",
     "pages/StyleUsePage",
     "pages/ExtendCharacterPage",
-    "pages/StateStyleUsePage"
+    "pages/StateStyleUsePage",
+    "pages/AnimateExtendPage"
   ]
 }

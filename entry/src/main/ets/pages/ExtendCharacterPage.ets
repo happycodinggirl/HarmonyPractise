@@ -3,7 +3,7 @@
 @Extend(Text) function childFancy(){
   .fontWeight(FontWeight.Bold)
 }
-// extend 装饰器只能用在 全局中，且可以有参数,且可以直接调用已有的
+// extend 装饰器只能用在 全局中，且可以有参数,且可以直接调用已有的，style属性 不可以有参数
 @Extend(Text) function  fancy(fontSize:number){
   .fontColor(Color.Red)
   .fontSize(fontSize)
