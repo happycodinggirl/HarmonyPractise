@@ -1,6 +1,7 @@
 
 @Component
 struct ChildDate{
+  //@Link childDate:Date 此处如果使用link 则子组件的变动会回传给父组件，若使用Prop装饰器，则不会
   @Prop childDate:Date = new Date()
 
 

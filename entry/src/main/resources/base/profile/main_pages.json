@@ -20,6 +20,7 @@
     "pages/RequiredPage",
     "pages/StatePage",
     "pages/StatePage1",
-    "pages/PropStatePage"
+    "pages/PropStatePage",
+    "pages/LinkPage"
   ]
 }
