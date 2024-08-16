@@ -23,6 +23,9 @@
     "pages/PropStatePage",
     "pages/LinkPage",
     "pages/ConsumePage",
-    "pages/ConsumeInsertPage"
+    "pages/ConsumeInsertPage",
+    "pages/ObjectLinkPage",
+    "pages/LinkPage1",
+    "pages/OfficialLinkPage"
   ]
 }

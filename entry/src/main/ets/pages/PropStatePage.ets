@@ -1,6 +1,6 @@
 
 @Component
-struct ChildDate{
+struct ChildDate1{
   //@Link childDate:Date 此处如果使用link 则子组件的变动会回传给父组件，若使用Prop装饰器，则不会
   //@Prop childDate:Date = new Date()
   @Consume childDate:Date // @Consume 和@Provide 组合 可实现和@Link 相同的效果，
@@ -38,7 +38,7 @@ struct ChildDate{
 @Component
 struct PropStatePage {
 
-  @Provide(`childDate`) parentDate:Date = new Date()
+  @Provide childDate:Date = new Date()
   //@State parentData:Date = new Date()
 
 
@@ -47,21 +47,21 @@ struct PropStatePage {
   build() {
     Column(){
       Button(`update parent date`).margin(10).onClick((err)=>{
-        this.parentDate=new Date(`2024-1-1`)
+        this.childDate=new Date(`2024-1-1`)
       })
 
       Button(`increase parent date by year`).margin(10).onClick((err)=>{
-        this.parentDate.setFullYear(this.parentDate.getFullYear()+1)
+        this.childDate.setFullYear(this.childDate.getFullYear()+1)
       })
 
 
       DatePicker({
         start:new Date(`1970-1-1`),
         end:new Date(`2100-1-1`),
-        selected:this.parentDate
+        selected:this.childDate
       })
 
-      ChildDate()
+      ChildDate1()
     }
 
 
