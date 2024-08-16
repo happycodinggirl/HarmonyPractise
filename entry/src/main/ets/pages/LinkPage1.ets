@@ -81,7 +81,7 @@ struct LinkPage1 {
       Text(`Entry component bookName size is ${this.book.bookName.size}`)
       Text(`Entry component user bag size is ${this.user.bag.size}`)
       Button(`update bookName size add 10`).onClick((err)=>{
-        this.book.bookName.size+=10 //这个不会引起 entry组件 Text 里面的数据变化，因为该变化属于第二层的变化，@State 无法观测到第二层的变化，但是MViewB里面的Text
+        this.book.bookName.size+=10 //f这个不会引起 entry组件 Text 里面的数据变化，因为该变化属于第二层的变化，@State 无法观测到第二层的变化，但是MViewB里面的Text
         //可以展示出这个变化，因为 Book 被@Observed 修饰，其属性size 的变化可以被ObjectLink 检测到
       })
       Button(`update user.bag = new Bag(33)`).onClick((err)=>{
