@@ -16,7 +16,7 @@ struct Index {
   private  contentList : Array<string> = ['异步任务','自定义UI',`自定义布局`,
     `Builder装饰器特性`,`Builder装饰器特性续集`,`Build参数来源`,
     `Build尾随闭包函数`,`wrapBuilder`,`Styles装饰器`,`Extend装饰器使用`,`StateStyle使用`,
-    `AnimatableExtend使用`,`Required使用`,`State属性`,`State属性1`,`PropState使用`, `Link参数使用`,`Consume使用`]
+    `AnimatableExtend使用`,`Required使用`,`State属性`,`State属性1`,`PropState使用`, `Link参数使用`,`Consume使用`,`Consume override 使用`]
 
   build() {
     List({space:`30`}){
@@ -100,6 +100,10 @@ struct Index {
                   break
                 case `Consume使用`:
                   router.pushUrl({url:`pages/ConsumePage`})
+                  break
+
+                case `Consume override 使用`:
+                  router.pushUrl({url:'pages/ConsumeInsertPage'})
                   break
 
               }
