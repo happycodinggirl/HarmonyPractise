@@ -21,6 +21,7 @@
     "pages/StatePage",
     "pages/StatePage1",
     "pages/PropStatePage",
-    "pages/LinkPage"
+    "pages/LinkPage",
+    "pages/ConsumePage"
   ]
 }
