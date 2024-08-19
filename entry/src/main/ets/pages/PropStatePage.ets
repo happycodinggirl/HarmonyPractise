@@ -33,7 +33,7 @@ struct ChildDate1{
   }
 }
 
-//parent 的 parentDate 改变会传导到child 的日期显示，而child 的日期改变不会传导到parent的日期显示
+//parent 的 parentDate 改变会传导到child 的日期显示，而child 的日期改变不会传导到parent的日期显示 Prop 修饰的变量变化方向是单向的
 @Entry
 @Component
 struct PropStatePage {

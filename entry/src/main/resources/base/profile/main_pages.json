@@ -26,6 +26,7 @@
     "pages/ConsumeInsertPage",
     "pages/ObjectLinkPage",
     "pages/LinkPage1",
-    "pages/OfficialLinkPage"
+    "pages/OfficialLinkPage",
+    "pages/LocalStoragePage"
   ]
 }

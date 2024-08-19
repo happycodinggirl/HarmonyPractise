@@ -5,7 +5,7 @@ struct ChildLink{
 
   @State memberMs:string='mem'
 
-  @Link @Watch('onSourceChange1') sourceNumber: number;
+  @Link @Watch('onSourceChange1') sourceNumber: number; //@Link 修饰的变量可以双向同步变化，子组件的变化也会传递给父组件
 
   onSourceChange1(){//当@Watch 的变量变化时候，会调到 onWatch()里面的方法
     this.memberMs='i watched sourceNumberchanged'
@@ -16,7 +16,9 @@ struct ChildLink{
       Text(`child memberMs is ${this.memberMs}`)
       Text(`child sourceNum is ${this.sourceNumber}`)
       Button(`child change memerMs`).onClick((err)=>{
-        this.memberMs=`i am changed` //这个地方的本地变量改变只会在childLink 组件里面，不会传到父组件中
+        this.sourceNumber = 22
+
+
       })
     }
 

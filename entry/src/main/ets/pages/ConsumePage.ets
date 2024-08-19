@@ -43,7 +43,7 @@ struct ComponentC{
 @Component
 struct ConsumePage {
 
-  @Consume consume1:number
+  @Provide consume1:number =10
 
   build() {
     Column(){
