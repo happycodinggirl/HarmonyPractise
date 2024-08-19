@@ -27,6 +27,7 @@
     "pages/ObjectLinkPage",
     "pages/LinkPage1",
     "pages/OfficialLinkPage",
-    "pages/LocalStoragePage"
+    "pages/LocalStoragePage",
+    "pages/ShareLocalStoragePage"
   ]
 }

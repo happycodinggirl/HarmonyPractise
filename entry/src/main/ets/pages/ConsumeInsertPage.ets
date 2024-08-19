@@ -5,7 +5,6 @@ struct GrandSon{
   @Consume reviewVotes:number
 
   build() {
-
     Column({space:10}){
       Text(`grandSon reviewVotes is ${this.reviewVotes}`)
       Button(`click to increase reviewVotes ${this.reviewVotes},+1`).onClick((err)=>{
@@ -41,7 +40,7 @@ struct ConsumeInsertPage {
 
   build() {
     Column(){
-      Text(`entry component reviewVotes is ${this.reviewVotes}`)//在这个例子里面，上面Text 展示的reviewVotes 的数值是10000，点击按钮，也会再10000基础上面加减
+      Text(`entry component reviewVotes is ${this.reviewVotes}`)//在这个例子里面，上面Text 展示的reviewVotes 的数值是1000，点击按钮，也会再1000基础上面加减
       Button(`click to increase`).onClick((err)=>{
         this.reviewVotes++
       })
