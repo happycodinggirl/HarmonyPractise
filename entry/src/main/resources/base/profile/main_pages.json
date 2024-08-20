@@ -34,6 +34,7 @@
     "pages/MAppStoragePage",
     "pages/MPersisitentPage",
     "pages/MEnvironmentPage",
-    "pages/MWatchPage"
+    "pages/MWatchPage",
+    "pages/WatchLinkPage"
   ]
 }
