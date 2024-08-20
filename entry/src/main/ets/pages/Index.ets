@@ -17,7 +17,7 @@ struct Index {
     `Builder装饰器特性`,`Builder装饰器特性续集`,`Build参数来源`,
     `Build尾随闭包函数`,`wrapBuilder`,`Styles装饰器`,`Extend装饰器使用`,`StateStyle使用`,
     `AnimatableExtend使用`,`Required使用`,`State属性`,`State属性1`,`PropState使用`, `Link参数使用`,`Consume使用`
-    ,`Consume override 使用`,`ObjectLink使用`,`多层嵌套组件ObjectLink使用`,`官方Link使用例子`,`LocalStorage使用`]
+    ,`Consume override 使用`,`ObjectLink使用`,`多层嵌套组件ObjectLink使用`,`官方Link使用例子`,`LocalStorage使用`,'LocalStorage使用1']
 
   build() {
     List({space:`30`}){
@@ -118,6 +118,10 @@ struct Index {
                   break
                 case `LocalStorage使用`:
                   router.pushUrl({url:`pages/LocalStoragePage`})
+                  break
+
+                case `LocalStorage使用1`:
+                  router.pushUrl({url:'pages/CLStoragePage'})
                   break
 
               }

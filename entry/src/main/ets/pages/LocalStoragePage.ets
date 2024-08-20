@@ -5,10 +5,10 @@ let storage = LocalStorage.getShared()
 
 @Component
 struct ChildLocalStroage {
-  @LocalStorageLink('PropA') link1:number=10 //@LocalStoragePro变量装饰器和LocalStorage中的PropA建立单向绑定关系
+  @LocalStorageProp('PropA') link1:number=10 //@LocalStoragePro变量装饰器和LocalStorage中的PropA建立双向绑定关系
   build() {
     Column(){
-      Button(`child link1 is ${this.link1}`).onClick((err)=>{//单击只会改变当前组件显示的link1，不会同步到LocalStorage 中
+      Button(`child link1 is ${this.link1}`).onClick((err)=>{//LocalStorageProp 单击只会改变当前组件显示的link1，不会同步到LocalStorage 中，而LocalStorageLink 会
         this.link1+=1
 
       })
@@ -26,14 +26,15 @@ struct ChildLocalStroage {
 struct LocalStoragePage {
 
 
-  @LocalStorageLink('PropA') link2:number=2
+  @LocalStorageProp('PropA') link2:number=2
 
 
   build() {
     Column(){
 
-      Button(`entry PropA is ${this.link2}`).onClick((err)=>{
-        this.link2+=2
+      Button(`entry PropA is ${this.link2}`).onClick((err)=>{ //这个对本地值进行的修改不会同步回LocalStorage 中，但下面通过set对本地值进行的更改会同步到
+        //@LocalStorageProp，并覆盖掉本地的值
+        this.link2 +=2
 
       }).margin(20)
 

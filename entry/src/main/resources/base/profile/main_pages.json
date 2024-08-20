@@ -28,6 +28,7 @@
     "pages/LinkPage1",
     "pages/OfficialLinkPage",
     "pages/LocalStoragePage",
-    "pages/ShareLocalStoragePage"
+    "pages/ShareLocalStoragePage",
+    "pages/CLStoragePage"
   ]
 }
