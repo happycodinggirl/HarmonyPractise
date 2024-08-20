@@ -29,6 +29,8 @@
     "pages/OfficialLinkPage",
     "pages/LocalStoragePage",
     "pages/ShareLocalStoragePage",
-    "pages/CLStoragePage"
+    "pages/CLStoragePage",
+    "pages/MStoragePage",
+    "pages/MAppStoragePage"
   ]
 }
