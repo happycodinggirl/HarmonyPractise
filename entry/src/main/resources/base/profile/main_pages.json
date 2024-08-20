@@ -32,6 +32,8 @@
     "pages/CLStoragePage",
     "pages/MStoragePage",
     "pages/MAppStoragePage",
-    "pages/MPersisitentPage"
+    "pages/MPersisitentPage",
+    "pages/MEnvironmentPage",
+    "pages/MWatchPage"
   ]
 }

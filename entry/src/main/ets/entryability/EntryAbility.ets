@@ -32,6 +32,19 @@ export default class EntryAbility extends UIAbility {
       }
       hilog.info(0x0000, 'testTag', 'Succeeded in loading the content.');
     });
+
+    let window = windowStage.getMainWindow()
+    window.then(window=>{
+      let uiContext = window.getUIContext()//Environment 和UIContext 相关联，需要再UIContext明确的时候才可以调用
+      uiContext.runScopedTask(()=>{
+       let has= Environment.envProp('languageCode','en')
+        console.info(`has is ${has}`)
+
+      })
+
+
+    })
+
   }
 
   eventFuc(arg0:Context,arg1:Context):void{
