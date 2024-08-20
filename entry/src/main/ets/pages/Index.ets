@@ -18,7 +18,7 @@ struct Index {
     `Build尾随闭包函数`,`wrapBuilder`,`Styles装饰器`,`Extend装饰器使用`,`StateStyle使用`,
     `AnimatableExtend使用`,`Required使用`,`State属性`,`State属性1`,`PropState使用`, `Link参数使用`,`Consume使用`
     ,`Consume override 使用`,`ObjectLink使用`,`多层嵌套组件ObjectLink使用`,`官方Link使用例子`,`LocalStorage使用`,
-    'LocalStorage使用1','LocalStorage与Navigation','Gallery2例子']
+    'LocalStorage使用1','LocalStorage与Navigation','Gallery2例子','PersistentStorage例子']
 
   build() {
     List({space:`30`}){
@@ -131,6 +131,10 @@ struct Index {
 
                 case 'Gallery2例子':
                   router.pushUrl({url:'pages/MAppStoragePage'})
+                  break
+
+                case 'PersistentStorage例子':
+                  router.pushUrl({url:'pages/MPersisitentPage'})
                   break
 
               }

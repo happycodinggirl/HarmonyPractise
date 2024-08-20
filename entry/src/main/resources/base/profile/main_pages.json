@@ -31,6 +31,7 @@
     "pages/ShareLocalStoragePage",
     "pages/CLStoragePage",
     "pages/MStoragePage",
-    "pages/MAppStoragePage"
+    "pages/MAppStoragePage",
+    "pages/MPersisitentPage"
   ]
 }
