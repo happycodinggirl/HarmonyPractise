@@ -35,6 +35,8 @@
     "pages/MPersisitentPage",
     "pages/MEnvironmentPage",
     "pages/MWatchPage",
-    "pages/WatchLinkPage"
+    "pages/WatchLinkPage",
+    "pages/OtherStatusPage",
+    "pages/TrackPage"
   ]
 }

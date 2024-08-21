@@ -23,7 +23,7 @@ struct RequiredPage {
 
   build() {
     Column(){
-      VChild({showContent:"INIT SHOWCONTENT".toLowerCase()})
+      VChild({showContent:"INIT SHOWCONTENT".toLowerCase()})//@Require 属性装饰的变量，再初始化组件的时候必须初始化
 
     }
 

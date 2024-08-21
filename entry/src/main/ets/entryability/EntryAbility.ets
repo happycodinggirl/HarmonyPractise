@@ -31,6 +31,8 @@ export default class EntryAbility extends UIAbility {
         return;
       }
       hilog.info(0x0000, 'testTag', 'Succeeded in loading the content.');
+
+      PersistentStorage.persistProp('PropA',43)//PersistentStorage和Ui实例相关联，持久化操作需要再UI实例初始化成功后
     });
 
     let window = windowStage.getMainWindow()

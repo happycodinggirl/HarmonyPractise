@@ -18,7 +18,7 @@ struct ExtendCharacterPage {
   build() {
     Column({space:20}){
       Text(`fancy 20`).fancy(20)
-      Text(`fancy 40`).fancy(40)
+      Text(`fancy 40`).childFancy()
     }
 
   }

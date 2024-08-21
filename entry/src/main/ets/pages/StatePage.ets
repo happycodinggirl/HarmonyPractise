@@ -54,7 +54,7 @@ struct StatePage {
 
       Text(`${this.title.name.value}`)
       Button(`click to change name.value`).onClick((err)=>{
-        this.title.name.value=`title.name.value changed`//嵌套属性的赋值观察不到
+        this.title.name.value=`title.name.value changed`//state 嵌套属性的赋值观察不到
       })
 
       Text(`arr value is `)
