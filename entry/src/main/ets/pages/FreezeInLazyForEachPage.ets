@@ -134,7 +134,7 @@ struct  FreezeListChild{
 
   onMessageChange(){
      console.debug(`freezeListChild item msgNum changed is ${this.msgNum} index is ${this.index}`)
-    // 开启freeze后 当 msgNum变化时候，只有cache的5个child 的onMessageChange 会被触发。若不开，则渲染出来的所有child 的回调都会被触发
+    // 开启freeze后 当 msgNum变化时候，只有当前显示的child 的onMessageChange 会被触发。若不开，则当前child 和被缓存的child 的回调都会被触发
   }
 
 
