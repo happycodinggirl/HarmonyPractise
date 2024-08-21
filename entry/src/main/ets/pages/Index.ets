@@ -19,7 +19,7 @@ struct Index {
     `AnimatableExtend使用`,`Required使用`,`State属性`,`State属性1`,`PropState使用`, `Link参数使用`,`Consume使用`
     ,`Consume override 使用`,`ObjectLink使用`,`多层嵌套组件ObjectLink使用`,`官方Link使用例子`,`LocalStorage使用`,
     'LocalStorage使用1','LocalStorage与Navigation','Gallery2例子','PersistentStorage例子','Environment变量读取',
-    'onWatch使用例子','Watch link 使用例子','其他状态使用例子','Track属性使用','FreezeInActive测试']
+    'onWatch使用例子','Watch link 使用例子','其他状态使用例子','Track属性使用','FreezeInActive测试','TabContent例子','Freeze再List使用']
 
   build() {
     List({space:`30`}){
@@ -157,6 +157,12 @@ struct Index {
                   break
                 case 'FreezeInActive测试':
                   router.pushUrl({url:'pages/InfreezePage'})
+                  break
+                case 'TabContent例子':
+                  router.pushUrl({url:'pages/FreezeInTabPage'})
+                  break
+                case 'Freeze再List使用':
+                  router.pushUrl({url:'pages/FreezeInLazyForEachPage'})
                   break
 
               }

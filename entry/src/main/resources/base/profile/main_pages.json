@@ -39,6 +39,8 @@
     "pages/OtherStatusPage",
     "pages/TrackPage",
     "pages/InfreezePage",
-    "pages/FreezeTestPage"
+    "pages/FreezeTestPage",
+    "pages/FreezeInTabPage",
+    "pages/FreezeInLazyForEachPage"
   ]
 }
