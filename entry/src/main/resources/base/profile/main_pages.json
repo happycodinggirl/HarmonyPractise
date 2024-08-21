@@ -37,6 +37,8 @@
     "pages/MWatchPage",
     "pages/WatchLinkPage",
     "pages/OtherStatusPage",
-    "pages/TrackPage"
+    "pages/TrackPage",
+    "pages/InfreezePage",
+    "pages/FreezeTestPage"
   ]
 }

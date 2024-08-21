@@ -1,4 +1,4 @@
-import text from '@ohos.graphics.text'
+
 
 class TrackClass{
   @Track str1:string ="hello"
@@ -29,6 +29,18 @@ function fancyText(){
 
 }
 
+class Log{
+  @Track loginInfo:string
+  owner:string
+  time:Date
+
+  constructor(loginInfo:string) {
+    this.loginInfo = loginInfo
+    this.owner="owner"
+    this.time = new Date()
+  }
+}
+
 
 @Entry
 @Component
@@ -36,6 +48,8 @@ struct TrackPage {
   @State trackClass:TrackClass = new TrackClass("hello")
 
   @State noTrackClass:NoTrackClass = new NoTrackClass("你好")
+
+  @State mLog:Log=new Log("loginInfo")
 
   isRender(num:number):number{
     console.info(` isRender num is ${num}`)
@@ -59,6 +73,16 @@ struct TrackPage {
         console.info('click to change notrackclass str1')
         this.noTrackClass.str1 = '再见'//改变没有被@Track 装饰符修饰的变量，除了 noTrackClass str1 刷新，noTrackClass str2 的Text 也会刷新
       })
+      Text(this.mLog.loginInfo).fontSize(this.isRender(5)).fancyText()
+
+      Button(`click to change no Track class str`).onClick((err)=>{
+        console.log('owner: ' + this.mLog.owner +
+          ' loginfo: ' + this.mLog.loginInfo +
+          ' time: ' + this.mLog.time )
+       this.mLog.loginInfo +=' info'
+      })
+
+
     }
 
   }
