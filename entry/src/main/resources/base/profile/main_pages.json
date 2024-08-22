@@ -41,6 +41,7 @@
     "pages/InfreezePage",
     "pages/FreezeTestPage",
     "pages/FreezeInTabPage",
-    "pages/FreezeInLazyForEachPage"
+    "pages/FreezeInLazyForEachPage",
+    "pages/FreezeInNavigationPage"
   ]
 }
