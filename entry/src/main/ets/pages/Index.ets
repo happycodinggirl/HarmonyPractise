@@ -20,7 +20,7 @@ struct Index {
     ,`Consume override 使用`,`ObjectLink使用`,`多层嵌套组件ObjectLink使用`,`官方Link使用例子`,`LocalStorage使用`,
     'LocalStorage使用1','LocalStorage与Navigation','Gallery2例子','PersistentStorage例子','Environment变量读取',
     'onWatch使用例子','Watch link 使用例子','其他状态使用例子','Track属性使用','FreezeInActive测试','TabContent例子'
-    ,'Freeze再List使用','Freeze再Navigation例子']
+    ,'Freeze再List使用','Freeze再Navigation例子','Consume LinK Prop 父子传递','LocalStorageLink父子传递','ObjectLink与Observed例子']
 
   build() {
     List({space:`30`}){
@@ -167,6 +167,15 @@ struct Index {
                   break
                 case 'Freeze再Navigation例子':
                   router.pushUrl({url:'pages/FreezeInNavigationPage'})
+                  break
+                case 'Consume LinK Prop 父子传递':
+                  router.pushUrl({url:'pages/ConsumeProviderPage'})
+                  break
+                case 'LocalStorageLink父子传递':
+                  router.pushUrl({url:'pages/LocalStorageLinkPage'})
+                  break
+                case 'ObjectLink与Observed例子':
+                  router.pushUrl({url:'pages/ObjectLinkAndPropPage'})
                   break
 
               }

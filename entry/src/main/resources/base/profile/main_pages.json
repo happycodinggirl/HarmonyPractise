@@ -42,6 +42,9 @@
     "pages/FreezeTestPage",
     "pages/FreezeInTabPage",
     "pages/FreezeInLazyForEachPage",
-    "pages/FreezeInNavigationPage"
+    "pages/FreezeInNavigationPage",
+    "pages/ConsumeProviderPage",
+    "pages/LocalStorageLinkPage",
+    "pages/ObjectLinkAndPropPage"
   ]
 }
