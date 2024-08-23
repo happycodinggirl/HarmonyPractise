@@ -49,6 +49,7 @@
     "pages/ContactPage",
     "pages/LinkArrPage",
     "pages/ObjectLinkQPage",
-    "pages/RefreshUiPage"
+    "pages/RefreshUiPage",
+    "pages/MakeGoddPage"
   ]
 }
