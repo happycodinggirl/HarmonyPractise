@@ -48,6 +48,7 @@
     "pages/ObjectLinkAndPropPage",
     "pages/ContactPage",
     "pages/LinkArrPage",
-    "pages/ObjectLinkQPage"
+    "pages/ObjectLinkQPage",
+    "pages/RefreshUiPage"
   ]
 }

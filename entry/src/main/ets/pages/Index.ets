@@ -21,7 +21,7 @@ struct Index {
     'LocalStorage使用1','LocalStorage与Navigation','Gallery2例子','PersistentStorage例子','Environment变量读取',
     'onWatch使用例子','Watch link 使用例子','其他状态使用例子','Track属性使用','FreezeInActive测试','TabContent例子'
     ,'Freeze再List使用','Freeze再Navigation例子','Consume LinK Prop 父子传递','LocalStorageLink父子传递'
-    ,'ObjectLink与Observed例子','通讯录例子','link在arr中的使用','ObjectLink多层嵌套']
+    ,'ObjectLink与Observed例子','通讯录例子','link在arr中的使用','ObjectLink多层嵌套','UI刷新例子']
 
   build() {
     List({space:`30`}){
@@ -186,6 +186,9 @@ struct Index {
                   break
                 case 'ObjectLink多层嵌套':
                   router.pushUrl({url:'pages/ObjectLinkQPage'})
+                  break
+                case 'UI刷新例子':
+                  router.pushUrl({url:'pages/RefreshUiPage'})
                   break
 
               }
