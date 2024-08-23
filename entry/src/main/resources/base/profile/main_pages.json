@@ -45,6 +45,9 @@
     "pages/FreezeInNavigationPage",
     "pages/ConsumeProviderPage",
     "pages/LocalStorageLinkPage",
-    "pages/ObjectLinkAndPropPage"
+    "pages/ObjectLinkAndPropPage",
+    "pages/ContactPage",
+    "pages/LinkArrPage",
+    "pages/ObjectLinkQPage"
   ]
 }
